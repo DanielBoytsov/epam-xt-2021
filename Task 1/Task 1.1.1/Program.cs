@@ -17,7 +17,7 @@ namespace Task_1._1._1
             } while (a <= 0);
             do
             {
-                Console.WriteLine("Put the weidth of the rectangle here");
+                Console.WriteLine("Put the width of the rectangle here");
                 if ((!double.TryParse(Console.ReadLine(), out b))|(b <= 0))
                 {
                     Console.WriteLine("Put the correct value!");
