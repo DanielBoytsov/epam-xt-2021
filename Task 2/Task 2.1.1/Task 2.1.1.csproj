@@ -6,4 +6,10 @@
     <RootNamespace>Task_2._1._1</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Reference Include="CustomExtensions">
+      <HintPath>bin\Debug\netcoreapp3.1\CustomExtensions.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>
