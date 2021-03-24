@@ -56,7 +56,9 @@ namespace Task_2._1._2
                 case Actions.ChangeUser:
                     ChangUser();
                     break;
-                    default:
+                case Actions.Exit:
+                    break;
+                default:
                         throw new InvalidOperationException("The selected action does not exist");
             }
         }
