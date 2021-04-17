@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace Task_3._3._3
 {
-    interface IReadyable
+    interface IOrderable
     {
-        public void PizzaReady();
+        public int OrderNumber {get;set; }
+        
     }
 }

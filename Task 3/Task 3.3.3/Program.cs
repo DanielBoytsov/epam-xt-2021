@@ -6,9 +6,9 @@ namespace Task_3._3._3
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-            
-
+            Pizzeria pizzeria = new Pizzeria();
+            pizzeria.OrderFeedback();
+            pizzeria.OrderIsReady();
         }
     }
 }

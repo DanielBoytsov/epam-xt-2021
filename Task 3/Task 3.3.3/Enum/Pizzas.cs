@@ -6,9 +6,14 @@ using System.Threading.Tasks;
 
 namespace Task_3._3._3
 {
-    interface IOrderable
+    public enum Pizzas
     {
-        public void CreateOrderNumber();
-        
+        None = 0,
+        Pepperoni = 1,
+        Ceasar = 2,
+        Margarita = 3,
+        Carbonara = 4,
     }
+       
+    
 }

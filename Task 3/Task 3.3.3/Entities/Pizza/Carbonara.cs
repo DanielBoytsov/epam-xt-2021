@@ -6,12 +6,11 @@ using System.Threading.Tasks;
 
 namespace Task_3._3._3
 {
-    class Order : Pizzeria,IOrderable
+    class Carbonara : Pizza
     {
-        Random rnd = new Random();
-        public void CreateOrderNumber()
+        public override void Name()
         {
-            OrderNumber = rnd.Next(1, 100);
+            Console.WriteLine("Carbonara");
         }
     }
 }
