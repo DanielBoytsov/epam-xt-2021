@@ -22,9 +22,12 @@ namespace Task_4._1._1
         public void DirectoryRestoration()
         {
             Console.WriteLine("Indicate to what point you want to rollback" +
-                              "\nWrite in format dd.MM.yyyy_HH:mm:ss" +
-                              "\n(like a 28.04.2021_12.34.45)" +
-                              "\nYou can check the available restorations in the Log.txt at Logs Directory");
+                              "\nWrite in format dd.MM.yyyy_HH:mm:ss (like a 28.04.2021_12.34.45)" +
+                              "\nYou can check the available restorations in the Log.txt at Logs Directory" +
+                              "\nOr you can see the list of available recoveries below");
+
+            Logger.PrintLogs(_logDirectory);
+
             var logTargetDirectory = new DirectoryInfo(_logDirectory + Console.ReadLine());
 
             if (logTargetDirectory.Exists)

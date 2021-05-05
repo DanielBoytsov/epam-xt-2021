@@ -48,7 +48,6 @@ namespace Task_4._1._1
 
                 while (enabled)
                     Thread.Sleep(1000);
-
             }
         }
         private void CatchingChanges(object sender, FileSystemEventArgs eventArgs)
@@ -58,8 +57,18 @@ namespace Task_4._1._1
             var newDir = _logDirectory + date;
 
             File.AppendAllText(_logDirectory + "Log.txt", "Backup was created successfully. You can restore it by this time :" + date + Environment.NewLine);
-
+            
+            File.AppendAllText(_logDirectory + "LogforList.txt", date + Environment.NewLine);
+            
             Restorer.DirectoryCopy(_sourceDirectory, newDir, true);
+        }
+
+        public static void PrintLogs(string _logDirectory)
+        {
+            foreach (var item in (File.ReadLines(_logDirectory + "LogforList.txt")))
+            {
+                Console.WriteLine(item);
+            }
         }
     }
 }
